@@ -19,6 +19,9 @@
 		1D6A9850163D96A90005E74D /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A984F163D96A90005E74D /* RMViewController.m */; };
 		1D6A985C163D977F0005E74D /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A9859163D977F0005E74D /* PhoneFormats.dat */; };
 		1D6A985D163D977F0005E74D /* RMPhoneFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A985B163D977F0005E74D /* RMPhoneFormat.m */; };
+		CE9988341CF268F90041FDDE /* RMPhoneFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A985B163D977F0005E74D /* RMPhoneFormat.m */; };
+		CE9988351CF268FF0041FDDE /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A9859163D977F0005E74D /* PhoneFormats.dat */; };
+		CE9988371CF269ED0041FDDE /* RMPhoneFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6A985A163D977F0005E74D /* RMPhoneFormat.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,8 @@
 		1D6A9859163D977F0005E74D /* PhoneFormats.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhoneFormats.dat; sourceTree = "<group>"; };
 		1D6A985A163D977F0005E74D /* RMPhoneFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPhoneFormat.h; sourceTree = "<group>"; };
 		1D6A985B163D977F0005E74D /* RMPhoneFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPhoneFormat.m; sourceTree = "<group>"; };
+		CE99882B1CF268E10041FDDE /* RMPhoneFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMPhoneFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE99882F1CF268E10041FDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +58,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9988271CF268E10041FDDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1D6A9827163D96A90005E74D = {
 			isa = PBXGroup;
 			children = (
-				1D6A983C163D96A90005E74D /* RMPhoneFormat */,
+				1D6A983C163D96A90005E74D /* RMPhoneFormat Sample */,
+				CE99882C1CF268E10041FDDE /* RMPhoneFormat */,
 				1D6A9835163D96A90005E74D /* Frameworks */,
 				1D6A9833163D96A90005E74D /* Products */,
 			);
@@ -69,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6A9832163D96A90005E74D /* RMPhoneFormat.app */,
+				CE99882B1CF268E10041FDDE /* RMPhoneFormat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +97,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1D6A983C163D96A90005E74D /* RMPhoneFormat */ = {
+		1D6A983C163D96A90005E74D /* RMPhoneFormat Sample */ = {
 			isa = PBXGroup;
 			children = (
 				1D6A9845163D96A90005E74D /* RMAppDelegate.h */,
@@ -95,6 +109,7 @@
 				1D6A9859163D977F0005E74D /* PhoneFormats.dat */,
 				1D6A983D163D96A90005E74D /* Supporting Files */,
 			);
+			name = "RMPhoneFormat Sample";
 			path = RMPhoneFormat;
 			sourceTree = "<group>";
 		};
@@ -112,14 +127,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE99882C1CF268E10041FDDE /* RMPhoneFormat */ = {
+			isa = PBXGroup;
+			children = (
+				CE99882F1CF268E10041FDDE /* Info.plist */,
+			);
+			path = RMPhoneFormat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CE9988281CF268E10041FDDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9988371CF269ED0041FDDE /* RMPhoneFormat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		1D6A9831163D96A90005E74D /* RMPhoneFormat */ = {
+		1D6A9831163D96A90005E74D /* RMPhoneFormatSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6A9856163D96A90005E74D /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */;
+			buildConfigurationList = 1D6A9856163D96A90005E74D /* Build configuration list for PBXNativeTarget "RMPhoneFormatSample" */;
 			buildPhases = (
-				CE9987BC1CF24F150041FDDE /* Formats */,
+				CE9987BC1CF24F150041FDDE /* Copy Formats */,
 				1D6A982E163D96A90005E74D /* Sources */,
 				1D6A982F163D96A90005E74D /* Frameworks */,
 				1D6A9830163D96A90005E74D /* Resources */,
@@ -128,10 +162,29 @@
 			);
 			dependencies = (
 			);
-			name = RMPhoneFormat;
+			name = RMPhoneFormatSample;
 			productName = RMPhoneFormat;
 			productReference = 1D6A9832163D96A90005E74D /* RMPhoneFormat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CE99882A1CF268E10041FDDE /* RMPhoneFormat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9988301CF268E10041FDDE /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */;
+			buildPhases = (
+				CE9988361CF2691C0041FDDE /* Copy Formats */,
+				CE9988261CF268E10041FDDE /* Sources */,
+				CE9988271CF268E10041FDDE /* Frameworks */,
+				CE9988281CF268E10041FDDE /* Headers */,
+				CE9988291CF268E10041FDDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMPhoneFormat;
+			productName = RMPhoneFormat;
+			productReference = CE99882B1CF268E10041FDDE /* RMPhoneFormat.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,6 +195,11 @@
 				CLASSPREFIX = RM;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Rick Maddy";
+				TargetAttributes = {
+					CE99882A1CF268E10041FDDE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
 			};
 			buildConfigurationList = 1D6A982C163D96A90005E74D /* Build configuration list for PBXProject "RMPhoneFormat" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -155,7 +213,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6A9831163D96A90005E74D /* RMPhoneFormat */,
+				1D6A9831163D96A90005E74D /* RMPhoneFormatSample */,
+				CE99882A1CF268E10041FDDE /* RMPhoneFormat */,
 			);
 		};
 /* End PBXProject section */
@@ -173,17 +232,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9988291CF268E10041FDDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9988351CF268FF0041FDDE /* PhoneFormats.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE9987BC1CF24F150041FDDE /* Formats */ = {
+		CE9987BC1CF24F150041FDDE /* Copy Formats */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = Formats;
+			name = "Copy Formats";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -f ${SRCROOT}/RMPhoneFormat/PhoneFormats.dat ]; then\nditto /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AppSupport.framework/Default.phoneformat ${SRCROOT}/RMPhoneFormat/PhoneFormats.dat\nfi";
+		};
+		CE9988361CF2691C0041FDDE /* Copy Formats */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Formats";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +282,14 @@
 				1D6A9847163D96A90005E74D /* RMAppDelegate.m in Sources */,
 				1D6A9850163D96A90005E74D /* RMViewController.m in Sources */,
 				1D6A985D163D977F0005E74D /* RMPhoneFormat.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9988261CF268E10041FDDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9988341CF268F90041FDDE /* RMPhoneFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +384,86 @@
 			};
 			name = Release;
 		};
+		CE9988311CF268E10041FDDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = RMPhoneFormat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maddyhome.iphone.RMPhoneFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE9988321CF268E10041FDDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = RMPhoneFormat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maddyhome.iphone.RMPhoneFormat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -307,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1D6A9856163D96A90005E74D /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */ = {
+		1D6A9856163D96A90005E74D /* Build configuration list for PBXNativeTarget "RMPhoneFormatSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6A9857163D96A90005E74D /* Debug */,
@@ -315,6 +484,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CE9988301CF268E10041FDDE /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9988311CF268E10041FDDE /* Debug */,
+				CE9988321CF268E10041FDDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
