@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE99883E1CF26B100041FDDE"
-               BuildableName = "PhoneFormat.framework"
-               BlueprintName = "PhoneFormat"
+               BuildableName = "RMPhoneFormat.framework"
+               BlueprintName = "RMPhoneFormat"
                ReferencedContainer = "container:RMPhoneFormat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE99883E1CF26B100041FDDE"
-            BuildableName = "PhoneFormat.framework"
-            BlueprintName = "PhoneFormat"
+            BuildableName = "RMPhoneFormat.framework"
+            BlueprintName = "RMPhoneFormat"
             ReferencedContainer = "container:RMPhoneFormat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE99883E1CF26B100041FDDE"
-            BuildableName = "PhoneFormat.framework"
-            BlueprintName = "PhoneFormat"
+            BuildableName = "RMPhoneFormat.framework"
+            BlueprintName = "RMPhoneFormat"
             ReferencedContainer = "container:RMPhoneFormat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -18,12 +18,11 @@
 		1D6A984D163D96A90005E74D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A984C163D96A90005E74D /* Default-568h@2x.png */; };
 		1D6A9850163D96A90005E74D /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A984F163D96A90005E74D /* RMViewController.m */; };
 		1D6A985C163D977F0005E74D /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A9859163D977F0005E74D /* PhoneFormats.dat */; };
-		CE9988421CF26B100041FDDE /* PhoneFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9988411CF26B100041FDDE /* PhoneFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE99884C1CF26B2B0041FDDE /* RMPhoneFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A985B163D977F0005E74D /* RMPhoneFormat.m */; };
 		CE99884D1CF26B2E0041FDDE /* PhoneFormats.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A9859163D977F0005E74D /* PhoneFormats.dat */; };
-		CE9988511CF26D4F0041FDDE /* RMPhoneFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6A985A163D977F0005E74D /* RMPhoneFormat.h */; };
-		CE9988521CF26D620041FDDE /* PhoneFormat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99883F1CF26B100041FDDE /* PhoneFormat.framework */; };
-		CE9988531CF26D620041FDDE /* PhoneFormat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE99883F1CF26B100041FDDE /* PhoneFormat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE9988521CF26D620041FDDE /* RMPhoneFormat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE99883F1CF26B100041FDDE /* RMPhoneFormat.framework */; };
+		CE9988531CF26D620041FDDE /* RMPhoneFormat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE99883F1CF26B100041FDDE /* RMPhoneFormat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE9988571CF2722E0041FDDE /* RMPhoneFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6A985A163D977F0005E74D /* RMPhoneFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE9988531CF26D620041FDDE /* PhoneFormat.framework in Embed Frameworks */,
+				CE9988531CF26D620041FDDE /* RMPhoneFormat.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,8 +68,7 @@
 		1D6A9859163D977F0005E74D /* PhoneFormats.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = PhoneFormats.dat; sourceTree = "<group>"; };
 		1D6A985A163D977F0005E74D /* RMPhoneFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPhoneFormat.h; sourceTree = "<group>"; };
 		1D6A985B163D977F0005E74D /* RMPhoneFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPhoneFormat.m; sourceTree = "<group>"; };
-		CE99883F1CF26B100041FDDE /* PhoneFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhoneFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9988411CF26B100041FDDE /* PhoneFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneFormat.h; sourceTree = "<group>"; };
+		CE99883F1CF26B100041FDDE /* RMPhoneFormat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMPhoneFormat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9988431CF26B100041FDDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9988521CF26D620041FDDE /* PhoneFormat.framework in Frameworks */,
+				CE9988521CF26D620041FDDE /* RMPhoneFormat.framework in Frameworks */,
 				1D6A9837163D96A90005E74D /* UIKit.framework in Frameworks */,
 				1D6A9839163D96A90005E74D /* Foundation.framework in Frameworks */,
 				1D6A983B163D96A90005E74D /* CoreGraphics.framework in Frameworks */,
@@ -110,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6A9832163D96A90005E74D /* RMPhoneFormatSample.app */,
-				CE99883F1CF26B100041FDDE /* PhoneFormat.framework */,
+				CE99883F1CF26B100041FDDE /* RMPhoneFormat.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +156,6 @@
 		CE9988401CF26B100041FDDE /* PhoneFormat */ = {
 			isa = PBXGroup;
 			children = (
-				CE9988411CF26B100041FDDE /* PhoneFormat.h */,
 				CE9988431CF26B100041FDDE /* Info.plist */,
 			);
 			path = PhoneFormat;
@@ -171,8 +168,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9988421CF26B100041FDDE /* PhoneFormat.h in Headers */,
-				CE9988511CF26D4F0041FDDE /* RMPhoneFormat.h in Headers */,
+				CE9988571CF2722E0041FDDE /* RMPhoneFormat.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,9 +195,9 @@
 			productReference = 1D6A9832163D96A90005E74D /* RMPhoneFormatSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE99883E1CF26B100041FDDE /* PhoneFormat */ = {
+		CE99883E1CF26B100041FDDE /* RMPhoneFormat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE9988481CF26B100041FDDE /* Build configuration list for PBXNativeTarget "PhoneFormat" */;
+			buildConfigurationList = CE9988481CF26B100041FDDE /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */;
 			buildPhases = (
 				CE99884E1CF26B330041FDDE /* Copy formats */,
 				CE99883A1CF26B100041FDDE /* Sources */,
@@ -213,9 +209,9 @@
 			);
 			dependencies = (
 			);
-			name = PhoneFormat;
+			name = RMPhoneFormat;
 			productName = PhoneFormat;
-			productReference = CE99883F1CF26B100041FDDE /* PhoneFormat.framework */;
+			productReference = CE99883F1CF26B100041FDDE /* RMPhoneFormat.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +242,7 @@
 			projectRoot = "";
 			targets = (
 				1D6A9831163D96A90005E74D /* RMPhoneFormatSample */,
-				CE99883E1CF26B100041FDDE /* PhoneFormat */,
+				CE99883E1CF26B100041FDDE /* RMPhoneFormat */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +325,7 @@
 /* Begin PBXTargetDependency section */
 		CE9988551CF26D620041FDDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE99883E1CF26B100041FDDE /* PhoneFormat */;
+			target = CE99883E1CF26B100041FDDE /* RMPhoneFormat */;
 			targetProxy = CE9988541CF26D620041FDDE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -528,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE9988481CF26B100041FDDE /* Build configuration list for PBXNativeTarget "PhoneFormat" */ = {
+		CE9988481CF26B100041FDDE /* Build configuration list for PBXNativeTarget "RMPhoneFormat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE9988491CF26B100041FDDE /* Debug */,

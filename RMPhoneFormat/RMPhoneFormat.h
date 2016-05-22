@@ -26,6 +26,13 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+//! Project version number for PhoneFormat.
+FOUNDATION_EXPORT double PhoneFormatVersionNumber;
+
+//! Project version string for PhoneFormat.
+FOUNDATION_EXPORT const unsigned char PhoneFormatVersionString[];
 
 @interface RMPhoneFormat : NSObject
 
