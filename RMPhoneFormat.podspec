@@ -12,7 +12,13 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "2.0"
   s.source_files = 'RMPhoneFormat/RMPhoneFormat.{h,m}'
   s.prepare_command = <<-CMD
-                        ditto /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AppSupport.framework/Default.phoneformat ./PhoneFormats.dat
+  						file="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/PrivateFrameworks/AppSupport.framework/Default.phoneformat"
+						if [ -f "$file" ]
+						then
+							ditto $file ./PhoneFormats.dat
+						else
+							echo "Using old PhoneFormats.dat."
+						fi
                    CMD
   s.resource = 'PhoneFormats.dat'
   s.requires_arc = true
